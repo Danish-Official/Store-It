@@ -48,8 +48,9 @@ const OtpModal = ({
     } catch (error) {
       console.log("Failed to verify OTP", error);
     }
-
-    setIsLoading(false);
+    finally{
+      setIsLoading(false);
+    }
   };
 
   const handleResendOtp = async () => {
